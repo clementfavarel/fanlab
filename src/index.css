@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h1-style {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl;
+}
+
+.h2-style {
+  @apply text-lg sm:text-xl md:text-3xl lg:text-5xl xl:text-7xl;
+}
+
+.p-style {
+  @apply text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl;
+}

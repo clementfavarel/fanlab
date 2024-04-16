@@ -1,0 +1,439 @@
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Bold_Italic.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Bold_Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Bold.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-ExtraBold_Italic.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-ExtraBold_Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-ExtraBold.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Light_Italic.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Light_Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Light.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Medium_Italic.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Medium_Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Medium.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Regular_Italic.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Regular_Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Regular.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Thin_Italic.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Thin_Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("./styles/fonts/Marianne-Thin.woff2") format("woff2"),
+    url("./styles/fonts/Marianne-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Marianne", arial, sans-serif;
+}
+
+h1 {
+  font-family: "Marianne", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// ACCUEIL
+
+#titre1 {
+  font-size: 50px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_header {
+  width: fit-content;
+}
+
+.logos {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 20px 20px 0;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+//swiper
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: #ffffff;
+}
+
+span.swiper-pagination-bullet {
+  background: white;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.5rem !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipementcarousel {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.swiper-slide .flyer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+//header
+.p_arrow {
+  animation: jump 2s infinite;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  img {
+    width: 50px;
+  }
+}
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+// menu
+.closeMenu {
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.openMenu {
+  transform: translateX(0%);
+  transition: 0.3s;
+}
+
+#menu {
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  padding: 8rem 1rem 1rem 2rem;
+  background-color: #000000b3;
+  backdrop-filter: blur(5px);
+  a {
+    li {
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* --- */
+
+$dark: white;
+
+@mixin btn($left, $top) {
+  z-index: 3;
+  position: fixed;
+  width: 60px;
+  top: $top;
+  left: $left;
+  transition-duration: 0.2s;
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.2s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 30px;
+  background-color: $dark;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.2s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.2s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $dark;
+  content: "";
+  top: $top;
+}
+
+@mixin icon-circle($height, $width, $color) {
+  transition-duration: 0.2s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  top: 2px;
+  border-radius: 100%;
+  background: rgb(17, 24, 39);
+  border: 2px solid $color;
+  left: -14px;
+}
+
+.icon-circle.open {
+  @include icon-circle(60px, 60px, #ffffff!important);
+}
+
+.btn14 {
+  @include btn(50px, 30px);
+
+  .icon-circle {
+    @include icon-circle(60px, 60px, #ffffff);
+  }
+
+  .icon {
+    @include icon(2px, 31px);
+
+    &:before {
+      @include icon-before(2px, 31px, -10px);
+    }
+
+    &:after {
+      @include icon-after(2px, 31px, 10px);
+    }
+  }
+
+  &.open {
+    .icon {
+      transition-duration: 0.2s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+        background-color: #fff;
+      }
+
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+        background-color: #fff;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.line {
+  height: 2px;
+  width: 100px;
+  background-color: #fff;
+}
+
+.line_black {
+  height: 2px;
+  width: 100px;
+  background-color: #2f4077;
+}
+
+.itproject {
+  position: relative;
+}
+
+.itproject::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.643
+  ); /* Assombrissement avec du noir semi-transparent */
+  z-index: 1;
+  display: flex;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%);
+}
+.equipement:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #ffffff;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%);
+}
+
+.equipement:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+  border: 1px solid #ffffff;
+}
